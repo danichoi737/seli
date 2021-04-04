@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>seli_description</name>
+  <version>0.1.0</version>
+  <description>
+    3D Models of SELI for simulation and visualization
+  </description>
+
+  <!-- License -->
+  <license>TODO: License declaration</license>
+
+  <!-- Author and Maintainer-->
+  <author email="danichoi737@gmail.com">Daniel Choi</author>
+  <maintainer email="danichoi737@gmail.com">Daniel Choi</maintainer>
+
+  <!-- URL -->
+  <url type="repository">https://github.com/danichoi737/seli</url>
+  <url type="website">https://danichoi737.tistory.com</url>
+
+  <!-- Dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>urdf</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <!-- Export -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

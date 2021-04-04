@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:property name="body_to_hip_x" value="0.105"/>
+  <xacro:property name="body_to_hip_y" value="0.088"/>
+  <xacro:property name="hip_to_upper_leg_x" value="0.042"/>
+  <xacro:property name="hip_to_upper_leg_y" value="0.0204"/>
+  <xacro:property name="upper_leg_to_lower_leg_x" value="0.1"/>
+  <xacro:property name="upper_leg_to_lower_leg_y" value="0.0859"/>
+  <xacro:property name="lower_leg_to_foot_distance" value="0.12656"/>
+
+  <xacro:property name="body_x_length" value="0.424"/>
+  <xacro:property name="body_y_lenght" value="0.248"/>
+  <xacro:property name="body_z_length" value="0.106"/>
+  <xacro:property name="body_mass" value="3.0707"/>
+  <xacro:property name="body_mesh_path" value="package://seli_description/meshes/body.stl"/>
+
+  <xacro:property name="hip_x_length" value="0.1034"/>
+  <xacro:property name="hip_y_lenght" value="0.0745"/>
+  <xacro:property name="hip_z_length" value="0.065"/>
+  <xacro:property name="hip_mass" value="0.3145"/>
+  <xacro:property name="hip_mesh_path" value="package://seli_description/meshes/hip.stl"/>
+
+  <xacro:property name="upper_leg_x_length" value="0.1034"/>
+  <xacro:property name="upper_leg_y_lenght" value="0.156"/>
+  <xacro:property name="upper_leg_z_length" value="0.065"/>
+  <xacro:property name="upper_leg_mass" value="0.3998"/>
+
+  <xacro:property name="lower_leg_x_length" value="0.0528"/>
+  <xacro:property name="lower_leg_y_lenght" value="0.022"/>
+  <xacro:property name="lower_leg_z_length" value="0.1435"/>
+  <xacro:property name="lower_leg_mass" value="0.0423"/>
+  <xacro:property name="lower_leg_mesh_path" value="package://seli_description/meshes/lower_leg.stl"/>
+</robot>

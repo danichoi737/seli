@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="seli" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find seli_description)/urdf/properties.urdf.xacro"/>
+  <xacro:include filename="$(find seli_description)/urdf/leg.urdf.xacro"/>
+
+  <!-- Color -->
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+
+  <!-- body Link -->
+  <link name="body_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${body_mesh_path}" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="${body_mesh_path}" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Legs -->
+  <xacro:seli_leg leg="lf"/>
+  <xacro:seli_leg leg="rf"/>
+  <xacro:seli_leg leg="lh"/>
+  <xacro:seli_leg leg="rh"/>
+
+</robot>
